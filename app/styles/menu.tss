@@ -1,0 +1,53 @@
+".container":{
+
+}
+
+"#listView" : {
+  // backgroundColor:'#2ecc71',
+  backgroundColor: 'white',
+  defaultItemTemplate: 'menuItem',
+  separatorColor: '#bbbbbb',
+  // selectedColor: '#6DC454',
+	canScroll: false
+}
+
+".labelHeader": {
+	width: Ti.UI.FILL,
+	left: 10,
+	color: 'white',
+	textAlign: 'left',
+	font: {
+		fontSize: 16
+	}
+}
+
+".headerView": {
+	// backgroundColor: '#27ae60',
+	backgroundColor: '#2ecc71',
+	height: 22
+}
+
+".menuItem": {
+	height : 50,
+  backgroundColor:'transparent'
+}
+
+".iconLabel": {
+	font: {
+		fontFamily: "Ionicons",
+		fontSize: 15
+	},
+	text: '\uf141',
+	color: '#34495e',
+	left: 10
+}
+
+".titleLabel": {
+	height: 30,
+	font: {
+		fontSize: 15
+	},
+	left: 28,
+	text: 'Menu 1',
+	color: '#2c3e50'
+}

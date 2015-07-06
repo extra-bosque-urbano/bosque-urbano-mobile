@@ -1,0 +1,28 @@
+<Alloy>
+	<Widget src="kr.yostudio.drawer"
+	    onDraweropen="onDrawerOpen"
+	    onDrawerclose="onDrawerClose">
+		<View class="menuWrap" role="leftView">
+			<Require id="menuC" src="menu">
+			</Require>
+		</View>
+		<Window platform="ios" role="centerWindow" title="Adopta un Árbol">
+			<LeftNavButton>
+				<View>
+					<Button  class="ion-android-menu menuBtn" onClick="onMenuButtonClick"/>
+				</View>
+			</LeftNavButton>
+			<Require src="main" id="mainC">
+			</Require>
+		</Window>
+		<Window platform="android" role="centerWindow">
+		  <ActionBar onHomeIconItemSelected="onMenuButtonClick" title="Adopta un Árbol" ></ActionBar>
+			<Menu>
+				<MenuItem id="item1" title="Settings"/>
+				<MenuItem id="item2" title="Search"/>
+			</Menu>
+			<Require src="main" id="mainC">
+			</Require>
+		</Window>
+	</Widget>
+</Alloy>

@@ -1,0 +1,30 @@
+<Alloy>
+    <View class="container">
+        <ListView id="listView">
+            <Templates>
+                <ItemTemplate name="menuItem" class="menuItem">
+                    <Label bindId="iconLabel" class="iconLabel"></Label>
+                    <Label bindId="titleLabel" class="titleLabel"></Label>
+                </ItemTemplate>
+            </Templates>
+            <ListSection>
+              <HeaderView>
+                  <View class="headerView">
+                      <Label class="labelHeader">Menú</Label>
+                  </View>>
+              </HeaderView>
+              <ListItem iconLabel:text="\uf1fd" titleLabel:text="Mis árboles" itemId="smile"></ListItem>
+              <ListItem iconLabel:text="\uf141" titleLabel:text="Adoptar" itemId="cry"></ListItem>
+            </ListSection>
+            <ListSection headerTitle="Change centerView">
+              <HeaderView>
+                  <View class="headerView">
+                      <Label class="labelHeader">Usuario</Label>
+                  </View>>
+              </HeaderView>
+              <ListItem iconLabel:text="\uf213" titleLabel:text="Mi cuenta" itemId="pizza"></ListItem>
+              <ListItem iconLabel:text="\uf2a9" titleLabel:text="Cerrar sesión" itemId="icecream"></ListItem>
+            </ListSection>
+        </ListView>
+    </View>
+</Alloy>
