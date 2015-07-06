@@ -1,0 +1,93 @@
+".container" : {
+  layout: "vertical"
+}
+
+".content": {
+  width: Ti.UI.FILL,
+  height: Ti.UI.FILL
+}
+
+"Label": {
+  width: Ti.UI.SIZE,
+  height: Ti.UI.SIZE
+}
+
+"#listView": {
+  visible: true,
+  defaultItemTemplate: 'listItem'
+}
+
+"#mapView": {
+  visible: false,
+  backgroundColor: "red",
+  width: Ti.UI.FILL,
+  height: Ti.UI.FILL
+}
+
+".treeName": {
+  top: 0,
+  left: 0,
+  textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+  font: {
+    fontWeight: "bold",
+    fontSize: 16
+  }
+}
+
+".treeSpecie": {
+  top: 2,
+  left: 0,
+  textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+  font: {
+    fontSize: 14
+  }
+}
+
+".treeInfo": {
+  left: 70,
+  layout: "vertical",
+  width: Ti.UI.SIZE,
+  height: Ti.UI.SIZE
+}
+
+".listItem": {
+  layout: "horizontal",
+  height: 70
+}
+
+".treeImgContainer": {
+  left: 10,
+  width: 50,
+  height: 50,
+  backgroundColor: "A9D35E",
+  borderRadius: 25
+}
+
+"Label":{
+	font:{
+		fontSize: 100
+	},
+	color: 'black'
+}
+
+".tabs": {
+  top: 0,
+  height: 40,
+  // backgroundColor: "white",
+  layout: "horizontal"
+}
+
+".tabItem": {
+  width: "50%"
+}
+
+".activeTab": {
+  backgroundColor: "#DFE0E1"
+}
+
+".tabLabel": {
+  color: "#34495e",
+  font: {
+    fontSize: 16
+  }
+}

@@ -1,6 +1,7 @@
 
 ".container" : {
-  backgroundColor: '#efefef'
+  // backgroundColor: '#efefef',
+  backgroundImage: 'app-background.png'
 }
 
 ".ion" : {

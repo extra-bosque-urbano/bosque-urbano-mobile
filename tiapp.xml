@@ -35,10 +35,21 @@
                 <false/>
                 <key>UIStatusBarStyle</key>
                 <string>UIStatusBarStyleDefault</string>
+                <key>NSLocationAlwaysUsageDescription</key>
+                <string>
+                    User's tree location.
+                </string>
             </dict>
         </plist>
     </ios>
-    <android xmlns:android="http://schemas.android.com/apk/res/android"/>
+     <android xmlns:android="http://schemas.android.com/apk/res/android">
+        <manifest>
+            <application>
+                <meta-data android:name="com.google.android.maps.v2.API_KEY"
+                    android:value="AIzaSyDFP5w6ANTE9No3x3oysX5fDqKsADGo6TA"/>
+            </application>
+        </manifest>
+    </android>
     <mobileweb>
         <precache/>
         <splash>
@@ -49,6 +60,8 @@
     </mobileweb>
     <modules>
         <module platform="android">com.tripvi.drawerlayout</module>
+        <module platform="android">ti.map</module>
+        <module platform="iphone">ti.map</module>
     </modules>
     <deployment-targets>
         <target device="android">true</target>

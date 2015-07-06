@@ -11,18 +11,18 @@
               <HeaderView>
                   <View class="headerView">
                       <Label class="labelHeader">Menú</Label>
-                  </View>>
+                  </View>
               </HeaderView>
-              <ListItem iconLabel:text="\uf1fd" titleLabel:text="Mis árboles" itemId="smile"></ListItem>
               <ListItem iconLabel:text="\uf141" titleLabel:text="Adoptar" itemId="cry"></ListItem>
+              <ListItem iconLabel:text="\uf1fd" titleLabel:text="Mis árboles" itemId="trees"></ListItem>
             </ListSection>
-            <ListSection headerTitle="Change centerView">
+            <ListSection>
               <HeaderView>
                   <View class="headerView">
                       <Label class="labelHeader">Usuario</Label>
                   </View>>
               </HeaderView>
-              <ListItem iconLabel:text="\uf213" titleLabel:text="Mi cuenta" itemId="pizza"></ListItem>
+              <ListItem iconLabel:text="\uf213" titleLabel:text="Mis datos" itemId="pizza"></ListItem>
               <ListItem iconLabel:text="\uf2a9" titleLabel:text="Cerrar sesión" itemId="icecream"></ListItem>
             </ListSection>
         </ListView>

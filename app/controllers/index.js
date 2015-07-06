@@ -11,18 +11,19 @@ function onDrawerClose(e) {
 }
 
 $.menuC.on('menuclick',function(e){
-    $.index.toggleLeftView({animated:false}); //animated option only work on ios
-    
-    switch(e.itemId){
-      case 'smile':
-      case 'cry':
-        $.index.openWindow(Alloy.createController(e.itemId).getView());
-      break;
-      
-      default:
-        $.index.setCenterView(Alloy.createController(e.itemId).getView()); //Arg shold be View(not window)
-      break;
-    }
+    $.index.toggleLeftView({animated:true}); //animated option only work on ios
+    $.index.setCenterView(Alloy.createController(e.itemId).getView());
+
+    // switch(e.itemId){
+    //   case 'smile':
+    //   case 'cry':
+    //     $.index.openWindow(Alloy.createController(e.itemId).getView());
+    //   break;
+
+    //   default:
+    //     $.index.setCenterView(Alloy.createController(e.itemId).getView()); //Arg shold be View(not window)
+    //   break;
+    // }
 });
 
 $.index.open();

@@ -1,0 +1,34 @@
+<Alloy>
+	<View class="container" id="mainView">
+    <View class="tabs">
+      <View class="tabItem" onClick="showList">
+        <Label class="tabLabel">Lista</Label>
+      </View>
+      <View class="tabItem activeTab" onClick="showMap">
+        <Label class="tabLabel">Mapa</Label>
+      </View>
+    </View>
+    <View class="content">
+      <ListView id="listView">
+        <Templates>
+            <ItemTemplate name="listItem" class="listItem">
+                <View class="treeImgContainer">
+
+                </View>
+                <View class="treeInfo">
+                  <Label bindId="treeName" class="treeName"></Label>
+                  <Label bindId="treeSpecie" class="treeSpecie"></Label>
+                </View>
+            </ItemTemplate>
+        </Templates>
+        <ListSection>
+          <ListItem treeName:text="Arbolito" treeSpecie:text="Roble" itemId="123"></ListItem>
+          <ListItem treeName:text="Arbelardo" treeSpecie:text="Pino" itemId="124"></ListItem>
+          <ListItem treeName:text="Arbolito" treeSpecie:text="Otro" itemId="123"></ListItem>
+        </ListSection>
+      </ListView>
+      <View id="mapView">
+      </View>
+    </View>
+	</View>
+</Alloy>

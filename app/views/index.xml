@@ -6,7 +6,7 @@
 			<Require id="menuC" src="menu">
 			</Require>
 		</View>
-		<Window platform="ios" role="centerWindow" title="Adopta un Árbol">
+		<Window platform="ios" role="centerWindow" title="Mi Bosque Urbano">
 			<LeftNavButton>
 				<View>
 					<Button  class="ion-android-menu menuBtn" onClick="onMenuButtonClick"/>

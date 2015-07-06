@@ -1,5 +1,5 @@
 <Alloy>
 	<View class="container">
-	    <Label class="ion-leaf ion"></Label>
+	    <!-- <Label class="ion-leaf ion"></Label> -->
 	</View>
 </Alloy>
